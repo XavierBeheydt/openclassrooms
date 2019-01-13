@@ -1,4 +1,5 @@
-# Tutoriel Openclassrooms sur LaTeX
+Tutoriel Openclassrooms sur LaTeX
+=================================
 
 Ce repo me permet d'avoir un pense bête sur l'utilisaytion de LaTeX et ce particulièrement en Math.
 
