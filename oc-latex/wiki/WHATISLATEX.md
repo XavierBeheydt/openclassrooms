@@ -71,3 +71,8 @@ Les avanatages de LaTeX sont sa gestion :
 
 
 ### La rétrocompatibilité
+
+Ici, LaTeX permet une totale rétrocompatibilité en version ou tant bien même entre éditeur ou même entre système d'exploitation. Donc vos documents seront identique sur Windows, macOS ou GNU/Linux.
+De plus, LaTeX permet la production de document au format PDF, permettant une lecture portable.
+
+> Il arrive qu'une extension nommé **package** entre en conflit sur des versions précédentes. Mais c'est exceptionnel.
