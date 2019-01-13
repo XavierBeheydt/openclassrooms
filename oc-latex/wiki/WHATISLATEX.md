@@ -17,8 +17,6 @@ Il est particulièrement efficace pour l'écriture de formule mathématiques.
 ![une formule mathématique](https://user.oc-static.com/files/380001_381000/380386.png "Une formule mathématique")
 
 *Une formule mathématique*
----
-
 
 ### Word vs LaTeX
 
