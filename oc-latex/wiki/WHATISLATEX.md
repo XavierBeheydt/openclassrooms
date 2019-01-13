@@ -48,3 +48,23 @@ LaTeX ne s'utilise pas de la même manière que Word, mais permet une fois le ty
 ```latex
 La liberté consiste à pouvoir faire \textit{tout ce qui ne nuit pas} à autrui...
 ```
+
+C'est un langage permettant de créer une mise en page lisible et adaptée, tout en respectant les normes éditoriales et typographiques.
+
+> L'optimisation de la création de documents typographiques propres est l'argument principal de l'utilisation de LaTeX et ça gratuité.
+
+Le grand plus est la facilité et la simplification de l'écriture de formules mathématiques.
+
+
+### Les avantages de LaTeX
+
+Les avanatages de LaTeX sont sa gestion :
+
+- des notes,
+- des flottants,
+- des long documents,
+- la hiérarchisation facilité des parties, chapitres, sections ...,
+- la possibilité de faire des références à un paragraphe, une figure, ...,
+- la génération automatique des bibliographies, index, et tables de matières.
+
+> Tout est modifiable et paramétrable au sein de LaTeX.
