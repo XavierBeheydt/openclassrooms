@@ -68,3 +68,6 @@ Les avanatages de LaTeX sont sa gestion :
 - la génération automatique des bibliographies, index, et tables de matières.
 
 > Tout est modifiable et paramétrable au sein de LaTeX.
+
+
+### La rétrocompatibilité
