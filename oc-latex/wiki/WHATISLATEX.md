@@ -76,3 +76,19 @@ Ici, LaTeX permet une totale rétrocompatibilité en version ou tant bien même 
 De plus, LaTeX permet la production de document au format PDF, permettant une lecture portable.
 
 > Il arrive qu'une extension nommé **package** entre en conflit sur des versions précédentes. Mais c'est exceptionnel.
+
+### Historique
+
+Tout commence avec le langage TeX par Donald Erwin Knuth (chercheur américain en informatique, né en 1938). Par le ras-le-bol de l'inélégence des mises en page de ses articles de mathématiques publiés par l'*American Mathematical Society*, Il décide de créer le langage TeX.
+
+TeX fût non pas pour créer de beaux documents, mais pour accroitre leurs lisibilités et facilités l'insertion de formules mathématiques.
+
+> Nous ne sommes pas des typographes, ni des experts de la mise en page, mais ceux qui ont participé à la création de TeX, le sont.
+
+LaTeX est une surcouche de TeX, créer plus tard, en 1985 par Leslie Lamport (chercheur en informatique américain, né en 1941). TeX était révolutionnaire mais compliqué à utiliser. LaTeX permis donc la simplification de bon nombre de tâches grâce à des *macros*.
+
+> Une macro est une commande qui permet de lancer une série d'actions.
+
+La dernière évolution majeure est LaTeXe, c'est celle que je vais apprendre.
+
+LaTeX est un logiciel / langage libre.
