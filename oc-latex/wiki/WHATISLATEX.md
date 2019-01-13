@@ -40,10 +40,11 @@ Le temps de rédaction sur un long document peut être réduit de 50%.
 Word est WYSIWYG (*what you see is what you get*).
 
 Exemple sur la différence de présentation :
+
 ![LaTeX vs Word](https://user.oc-static.com/thb/238001_239000/238826.png)
 
 LaTeX ne s'utilise pas de la même manière que Word, mais permet une fois le type de document choisi de taper du texte au kilomètre. Ici un exemple de mise ne italic du texte.
 
-```tex
+```latex
 La liberté consiste à pouvoir faire \textit{tout ce qui ne nuit pas} à autrui...
 ```
