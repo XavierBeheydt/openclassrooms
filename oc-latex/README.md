@@ -15,6 +15,9 @@ Ce repo est tiré de l'excellent tuto sur [Openclassrooms](https://openclassroom
     1. [La rétrocompatibilité](.wiki/WHATISLATEX.md#La_rétrocompatibilité)
     1. [Historique](.wiki/WHATISLATEX.md#Historique)
 
+2. [Installation de LaTeX](./wiki/INSTALL_LATEX.md)
+    2. [Logiciels dont j'ai besoin](./wiki/INSTALL_LATEX.md#Logiciels_dont_j'ai_besoin)
+
 
 ### Sources
 
