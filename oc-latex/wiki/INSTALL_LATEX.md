@@ -4,7 +4,7 @@ Je vais donc détaillés l'installation de LaTEx sur les différentes plateforme
 
 Il existe différents environnements, en CLI ou graphique, différents moteurs de transcription vers les formats d'export.
 
-Nous pouvons utilisé n'importe quel éditeur de texte brut, pour rédiger en LaTeX. Puis convertir via un logiciel à part que l'on appelle la **distribution LaTeX**.
+gitNous pouvons utilisé n'importe quel éditeur de texte brut, pour rédiger en LaTeX. Puis convertir via un logiciel à part que l'on appelle la **distribution LaTeX**.
 
 Le principe que je vais utilisé sera une distribution utilisée par la ligne de commande ou intégrée à mon éditeur de code qui est [Visual Studio Code](https://code.visualstudio.com/). Je ne détaillerai pas ici l'installation de VSCode.
 
