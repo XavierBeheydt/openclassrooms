@@ -18,6 +18,7 @@ Ce repo est tiré de l'excellent tuto sur [Openclassrooms](https://openclassroom
 2. [Installation de LaTeX](./wiki/INSTALL_LATEX.md)
     2. [Logiciels dont j'ai besoin](./wiki/INSTALL_LATEX.md#Logiciels_dont_j'ai_besoin)
         - [Installation sur Windows](wiki/INSTALL_LATEX.md#Windows)
+   
     **TODO GNU/Linux et macOS installation**
 
 3. [Structurer son premier document](./wiki/STRUCTURE.md)
