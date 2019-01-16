@@ -14,10 +14,12 @@ Ce repo est tiré de l'excellent tuto sur [Openclassrooms](https://openclassroom
     1. [Les avantages de LaTeX](.wiki/WHATISLATEX.md#Les_avantages_de_LaTeX)
     1. [La rétrocompatibilité](.wiki/WHATISLATEX.md#La_rétrocompatibilité)
     1. [Historique](.wiki/WHATISLATEX.md#Historique)
-
+    
 2. [Installation de LaTeX](./wiki/INSTALL_LATEX.md)
     2. [Logiciels dont j'ai besoin](./wiki/INSTALL_LATEX.md#Logiciels_dont_j'ai_besoin)
         2. [Installation sur Windows](wiki/INSTALL_LATEX.md#Windows)
+   
+    **TODO GNU/Linux et macOS installation**
 
 3. [Structurer son premier document](./wiki/STRUCTURE.md)
     3. [La compilation](./wiki/STRUCTURE.md#La_compilation)
