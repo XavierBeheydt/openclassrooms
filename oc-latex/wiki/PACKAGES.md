@@ -27,7 +27,7 @@ Nous allons détailler un exemple :
 \usepackage[francais]{babel}  % un troisième package
 \begin{document}
 
-J'écris mon 3\up{e} document avec \og \LaTeX{} \fg.
+J'écris mon 3\up{e} document avec \og \LaTeX \fg.
 \LaTeX{} est un langage créé par Leslie \bsc{Lamport}.
 
 \end{document}
@@ -39,6 +39,8 @@ Détails :
 - `fontenc` et `inputenc`, permettent d'utiliser tous les caractères du clavier latin via l'encodage UTF-8.
 - `\up{text}` est la mise à la puissance du package `babel`.
 - `\og` est "<<" du package `babel`.
+
+> Les chevrons guillemet peuvent être transcris aussi via `<< >>`.
 
 
 Tableau détaillant quelques commandes de mise en page du package `babel` :
