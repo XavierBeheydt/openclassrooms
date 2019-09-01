@@ -83,10 +83,35 @@ Pour savoir quelle version est utilisée, nous lançons la commande `pyenv versi
 Nous pouvons, donc définir une version de base pour le système et aussi configuré une version locale pour un dossier.
 
 ```shell
-# Configuration de version systeme/global
+# Configuration de version système/global
 pyenv global version 3.7.4
 # Configuration d'une version locale dans un dossier
 pyenv local version 3.7.4
 ```
 
 Ici, nous choisissons une version de python, mais nous le verrons plustard, nous pouvons créer un environnement virtuel basée sur une version mais avec son lot de package et l'affecter au système ou à une configuration locale.
+
+### Création d'un environnement virtuel
+
+Dans le cas du travail sur un projet, la bonne méthode consiste à créer un environnement virtuel.
+
+```shell
+# Création d'un env basée sur une version de python
+pyenv virtualenv 3.7.4 mon_env
+# Affectation de l'env au dossier de travail
+pyenv local mon_env
+```
+
+L'affectation de l'env doit s'effectuer dans le dossier de travail. Cette commande créée un fichier nommer `.python-version`. Ce fichier permet d'activer automatiquement l'env lorsque nous sommes dans le dossier.
+
+Le cas d'une activation manuelle de l'env:
+
+```shell
+pyenv activate mon_env
+```
+
+Ce fichier peut ête exclue du suivi de git. on l'ajoute donc au fichier `.gitignore`.
+
+```shell
+echo ".python-version" >> .gitignore
+```
