@@ -123,3 +123,9 @@ Lorsque nous développons des modules python, notre programme aura très certain
 Nous pouvons donc `freeze`, la configuration des packages installés en lançant la commande `pip freeze`. Mais celle-ci comporte un défaut, certains packages ne seront certainement pas utiles pour le fonctionnement de notre programme. Il faudra donc effectué un nettoyage de la sortie.
 
 Les dépendances seront donc à affecter au fichiers `requirements.txt`.
+
+### Installation des dépendances
+
+Pour faire une installation manuel, la commande est `pip install <nom_package>`.
+
+Pour effectuer, une installation depuis un fichier voici la syntaxe : `pip install -r requirements.txt`.
