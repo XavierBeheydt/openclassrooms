@@ -2,6 +2,10 @@
 
 Tutoriel sur la gestion des modules et paquets. Apprentissage des lib Numpy, Mathplotlib. Les décorateurs.
 
+<div hidden>
+    TODO : Revoir le bloc de texte précédent à la fin du cour.
+</div>
+
 ## Préparation des dossiers
 
 Alors pour créer un projet et pouvoir en faire un package à terme voici l'architecture des dossiers et fichiers.
@@ -50,3 +54,39 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+## Les environnements virtuels
+
+> Je vais détailler les envs via `pyenv`, car c'est le système que j'utilise et que je trouve plus simple.
+
+Dans le cas de travaux sur différents projets, les modules extérieurs utilisés peuvent être très nombreux. Ainsi, les dates de départs de lancement des projets pose problèmes.
+
+Pourquoi ?
+
+Car les modules utilisés peuvent évolués en terme de version, donc cela peut créer des soucis de compatibilité entre les version utilisées dans les différents projets que l'on développe.
+
+Voici, la syntaxe pour créer un projet local via `pyenv`.
+
+### Installation d'une version de python
+
+`Pyenv` permet d'installer des versions différentes de python, ce qui à mon goût donne un avantage à cette solution.
+
+```shell
+# Installation de la version de python 3.7.4
+pyenv install 3.7.4
+```
+
+On peut voir les versions installés sur le système via la commande `pyenv versions`.
+
+Pour savoir quelle version est utilisée, nous lançons la commande `pyenv version`, **attention version sans (s)**.
+
+Nous pouvons, donc définir une version de base pour le système et aussi configuré une version locale pour un dossier.
+
+```shell
+# Configuration de version systeme/global
+pyenv global version 3.7.4
+# Configuration d'une version locale dans un dossier
+pyenv local version 3.7.4
+```
+
+Ici, nous choisissons une version de python, mais nous le verrons plustard, nous pouvons créer un environnement virtuel basée sur une version mais avec son lot de package et l'affecter au système ou à une configuration locale.
