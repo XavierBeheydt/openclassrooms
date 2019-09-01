@@ -115,3 +115,11 @@ Ce fichier peut ête exclue du suivi de git. on l'ajoute donc au fichier `.gitig
 ```shell
 echo ".python-version" >> .gitignore
 ```
+
+### Le fichier de dépendance
+
+Lorsque nous développons des modules python, notre programme aura très certainement besoins de modules/package extérieurs. Ainsi, il est possible de générer un fichier listant et automatisant l'installation des dépendances. Celui-ci s'appel `requirements.txt`.
+
+Nous pouvons donc `freeze`, la configuration des packages installés en lançant la commande `pip freeze`. Mais celle-ci comporte un défaut, certains packages ne seront certainement pas utiles pour le fonctionnement de notre programme. Il faudra donc effectué un nettoyage de la sortie.
+
+Les dépendances seront donc à affecter au fichiers `requirements.txt`.
