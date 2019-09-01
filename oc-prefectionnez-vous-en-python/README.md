@@ -34,3 +34,19 @@ Fichier `/parite/parite.py`:
 #!/usr/bin/env python3
 # coding: utf-8
 ```
+
+### Une exécution maîtrisée
+
+Dans le cas où un script peut servir de module au sein un paquet ou bien être utilisé en tant que programme principal. Il ya une best practice à mettre en moeuvre.
+
+Nous créons une fonction `main()` qui sera la partie lanceur en mode autonôme. Son appel se fera via une condition.
+
+Comme un script est lu de haut en bas, tout est exécuté au lancement de celui-ci ainsi la condition `__main__` permet de dire on lance la fonction `main()` lorsqu'on lance ce script seulement :
+
+```python
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+```
