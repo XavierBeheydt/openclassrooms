@@ -129,3 +129,14 @@ Les dépendances seront donc à affecter au fichiers `requirements.txt`.
 Pour faire une installation manuel, la commande est `pip install <nom_package>`.
 
 Pour effectuer, une installation depuis un fichier voici la syntaxe : `pip install -r requirements.txt`.
+
+## Organiser un projet en module
+
+L'organisation d'un projet est important, car celui-ci permet une meilleur maintenabilité. Mais aussi le possibilité dans le futur d'en faire un package publiable.
+Comme j'ai pu lire dans différents blog. Il est fortement conseillé de faire l'ensemble dans la langue de Sheakspeer. Car cela limitera moins le nombre de personne pouvant être intéressé par votre projet.
+
+### Création des paquets (lib)
+
+Dans ce projet, nous allons avoir deux lib d'analyse. L'une pour le `xml` et l'autre pour le `csv`.
+
+Nous allons créer un fichier `setup.py` à la base du projet et un dossier reprenant les modules qui seront respectivement `parser/xml.py` et `parser/csv.py`.
