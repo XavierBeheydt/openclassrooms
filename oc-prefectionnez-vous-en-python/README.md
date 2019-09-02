@@ -140,3 +140,7 @@ Comme j'ai pu lire dans différents blog. Il est fortement conseillé de faire l
 Dans ce projet, nous allons avoir deux lib d'analyse. L'une pour le `xml` et l'autre pour le `csv`.
 
 Nous allons créer un fichier `setup.py` à la base du projet et un dossier reprenant les modules qui seront respectivement `parser/xml.py` et `parser/csv.py`.
+
+Dans chaque dossier, de sous-module afin de créer un package dispo d'un fichier `__init__.py`.
+Celui-ci est lancé comme initialisateur, un peu comme le constructeur en python. Il permet de définir les process effectué lors de l'import.
+_Dans le cas d'aucun process, `__init__.py`, peut rester vide.
