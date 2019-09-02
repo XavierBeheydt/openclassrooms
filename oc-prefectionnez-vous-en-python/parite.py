@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-def main():
-    pass
+import csv_analysis as c_an 
+
 
 if __name__ == "__main__":
-    main()
+    c_an.launch_analysis('current_mps.csv')
