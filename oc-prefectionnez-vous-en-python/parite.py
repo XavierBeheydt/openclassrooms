@@ -32,4 +32,7 @@ def main():
 
 
 if __name__ == "__main__":
+    # Import de la lib de debug et lancement du tracage
+    # Il faut bien pensé à retirer cela après
+    import pdb; pdb.set_trace()
     main()
