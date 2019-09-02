@@ -249,5 +249,12 @@ log.basicConfig(level)
 Ici, nous allons mettre en pratique les lib NumPy, Pandas et Matplotlib.
 
 _Matplotlib_ servira pour la création de graphiques. _Numpy_ sera notre outil de manipulation des données et surtout pour les séries de nombre. _Pandas_ permettra l'introduction de la _Dataframe_.
-
 La _Dataframe_ permet de concevoir cela un peu tel un tableur.
+
+Installez les package via `pip`.
+
+```shell
+pip install numpy matplotlib pandas
+```
+
+Vous pouvez aussi, intégrer les lib au fichier `requirements.txt` et lancer la commande `pip install -r requirements.txt`.
