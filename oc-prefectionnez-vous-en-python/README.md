@@ -175,3 +175,7 @@ if __name__ == "__main__":
     else:
         csv.launch_analysis('current_mps.csv')
 ```
+
+## Gérez les erreurs et les bogues
+
+Cette partie a une importance flagrante, elle permet de faire une vérification immédiate des problèmes de code. Cela, permet aussi de trouver quels sont les algo ne fonctionnant pas.
