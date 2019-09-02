@@ -1,6 +1,6 @@
 # Prefectionnez-vous en Python
 
-Tutoriel sur la gestion des modules et paquets. Apprentissage des lib Numpy, Mathplotlib. Les décorateurs.
+Tutoriel sur la gestion des modules et paquets. Apprentissage des lib Numpy, pands et Mathplotlib. Les décorateurs.
 
 <div hidden>
     TODO : Revoir le bloc de texte précédent à la fin du cour.
