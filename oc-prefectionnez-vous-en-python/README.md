@@ -175,3 +175,47 @@ if __name__ == "__main__":
     else:
         csv.launch_analysis('current_mps.csv')
 ```
+
+## Gérez les erreurs et les bogues
+
+Cette partie a une importance flagrante, elle permet de faire une vérification immédiate des problèmes de code. Cela, permet aussi de trouver quels sont les algo ne fonctionnant pas.
+
+### Débogue Python avec PDB
+
+Pour lancer le débuggueur en mode console, il y a la méthode suivante.
+
+Pour inclure, un debugger dans un fichier python, nous importons la lib pdb. Et nous demandons la tracage avec la méthode `pdb.set_trace()`.
+L'endroit ou est positionné le set_trace, permet l'arrêt de l'exécution et de regarder les objets juste après.
+
+```python
+import pdb; set_trace()
+```
+
+L'intégration d'un debuggueur vie VScode.
+Il faut donc paramétrer une task permettant de lancer le script ou le projet avec les éléments que nous voulons, je vais détailler la configuration via l'exemple du projet actuel.
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Parite.py CSV",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/parite.py",
+            "args": [
+                "-d",
+                "data/current_mps.csv",
+                "-e",
+                "csv"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
+```
+
+Ici, nous lançons notre script `parite.py` avec les arguments que nous avons besoin pour lancer une analyse de csv.
