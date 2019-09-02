@@ -7,8 +7,8 @@
 
 # import as lib
 import parser.csv as csv
-omport parser.xml as xml
+import parser.xml as xml
 
 if __name__ == "__main__":
-    c_an.launch_analysis('current_mps.csv')
-    x_an.launch_analysis('SyceronBrut.xml')
+    csv.launch_analysis('current_mps.csv')
+    xml.launch_analysis('SyceronBrut.xml')
