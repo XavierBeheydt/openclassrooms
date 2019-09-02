@@ -243,3 +243,11 @@ Exemple de réglage de niveau :
 ```python
 log.basicConfig(level)
 ```
+
+## Créer des graphiques
+
+Ici, nous allons mettre en pratique les lib NumPy, Pandas et Matplotlib.
+
+_Matplotlib_ servira pour la création de graphiques. _Numpy_ sera notre outil de manipulation des données et surtout pour les séries de nombre. _Pandas_ permettra l'introduction de la _Dataframe_.
+
+La _Dataframe_ permet de concevoir cela un peu tel un tableur.
