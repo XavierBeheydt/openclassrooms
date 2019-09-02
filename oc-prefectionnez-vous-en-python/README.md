@@ -13,13 +13,15 @@ Alors pour créer un projet et pouvoir en faire un package à terme voici l'arch
 ```shell
 /repo
 ├── data
-│   ├── nosdeputes.fr_deputes_en_mandat_2019-09-01.csv
-|   └── débats.xml
+│   ├── current_mps.csv
+|   └── SyceronBrut.xml
+├── parser
+│   ├── csv.py
+|   └── xml.py
 ├── .gitignore
 ├── README.md
 ├── setup.py
-├── parite.py
-└── main.py
+└── parite.py
 ```
 
 ## Organisation d'un script
