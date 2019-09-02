@@ -148,3 +148,7 @@ Celui-ci est lancé comme initialisateur, un peu comme le constructeur en python
 _Dans le cas d'aucun process, `__init__.py`, peut rester vide.
 
 [Documentation de python-packaging](https://python-packaging.readthedocs.io/en/latest/minimal.html)
+
+## Parsing des arguments
+
+Ici, nous allons présenter le concept d'envois d'argument au script et donc augmenté les capacités de celui-ci.
