@@ -219,3 +219,27 @@ Il faut donc paramétrer une task permettant de lancer le script ou le projet av
 ```
 
 Ici, nous lançons notre script `parite.py` avec les arguments que nous avons besoin pour lancer une analyse de csv.
+
+## Logs
+
+Une application a peut être besoin de générer des logs afin d'avoir des informations sur ce qui s'est passé durant l'exécution.
+
+La lib de loggin fait parti intégrante de la distro de Python, nous pouvons donc directement l'importer dans notre projet.
+
+Avec le logging, nous pouvons donc structuré les messages affichés dans la console, mais aussi les exportés de manière automatique vers un fichier
+
+Il existe 5 niveau de log :
+
+- `DEBUG` :  Informations détaillées dans le but d'en savoir plus sur l'exécution d'une instruction.
+- `INFO` : Information sur le déroulement d'un programme.
+- `WARNING` : Quelque chose d'inattendu s'est produit mais le programme continue de fonctionner.
+- `ERROR` : A cause d'un problème important, le programme n'a pu réaliser une tâche.
+- `CRITICAL` : Problème très sérieux qui a pu causer l'arrêt du programme.
+
+C'est à nous de définir ce que l'on veut en niveau de log pour l'affichage.
+
+Exemple de réglage de niveau :
+
+```python
+log.basicConfig(level)
+```
