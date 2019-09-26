@@ -1,0 +1,6 @@
+﻿  saisi_char.c
+c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\saisi_char\saisi_char\saisi_char.c(10): warning C4473: 'scanf_s' : nombre insuffisant d'arguments passés pour la chaîne de format
+  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\saisi_char\saisi_char\saisi_char.c(10): note: les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
+  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\saisi_char\saisi_char\saisi_char.c(10): note: l'argument variadique manquant 2 est demandé par la chaîne de format '%s'
+  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\saisi_char\saisi_char\saisi_char.c(10): note: cet argument est utilisé comme taille de mémoire tampon
+  saisi_char.vcxproj -> C:\Users\xavie\source\repos\didierbroska\Openclassrooms\OC-Apprenez-a-programmer-en-C\src\saisi_char\Debug\saisi_char.exe
