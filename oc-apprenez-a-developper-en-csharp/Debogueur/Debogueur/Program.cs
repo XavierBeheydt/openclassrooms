@@ -10,7 +10,9 @@ namespace Debogueur
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CalculSommeIntersection());
+            string chaine = "12,75";
+            int i = Convert.ToInt32(chaine);
+            Console.WriteLine(i);
         }
 
         static int CalculSommeIntersection()
