@@ -1,22 +1,22 @@
 # Le calcul dans C
 
-## Les opÈrateurs de base
+## Les op√©rateurs de base
 
 - addition : +
 - soustraction : -
-- multilication : *
+- multiplication : *
 - division : /
 - modulo : %
 
-*Dans le cas de division avec des entiers seule la partie entiËre sera rÈsultante,
+*Dans le cas de division avec des entiers seule la partie enti√®re sera r√©sultante,
 exemple : `5 / 2 = 2`.*
 
-## Les raccoucis
+## Les raccourcis
 
-- l'incrÈmentation : var++;
-- la dÈcrÈmentation : var--;
+- l'incr√©mentation : var++;
+- la d√©cr√©mentation : var--;
 
-### Par rÈaffectation ‡ la variable
+### Par r√©affectation √† la variable
 
 - addition : var += 4;
 - soustraction : var -= 56;
@@ -24,8 +24,8 @@ exemple : `5 / 2 = 2`.*
 - division : var /= 2;
 - modulo : var %= 4;
 
-## La bibliothËque mathÈmatique
+## La biblioth√®que math√©matique
 
-La bibliothËque standard dispose d'une librairie mathÈmatique, `<math>`.
-Cela se met en place par l'inclusion de la bibmliothËque par `#include <math>`.
-Pour connaitre son API voi [ici](https://devdocs.io/c/numeric/math).
+La biblioth√®que standard dispose d'une librairie math√©matique, `<math>`.
+Cela se met en place par l'inclusion de la biblioth√®que par `#include <math>`.
+Pour conna√Ætre son API voir [ici](https://devdocs.io/c/numeric/math).
