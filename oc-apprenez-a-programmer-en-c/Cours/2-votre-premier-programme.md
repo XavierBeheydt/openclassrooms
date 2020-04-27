@@ -7,8 +7,8 @@
 int main(int argc, char *argv[])
 {
 	/*
-	int argc est l'integer retournant le nombre d'arguments passés.
-	char *argv[] est donc un tableau de char des argument passés.
+	int argc est l'integer retournant le nombre d'arguments passï¿½s.
+	char *argv[] est donc un tableau de char des argument passï¿½s.
 	*/
 	
 	// Code retour
@@ -16,12 +16,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Les directives de preprocesseurs
+## Les directives de prÃ©processeurs
 
-Ce sont les inclusions pour la bibliothèque d'entrée sortie standard et la lib standard.
+Ce sont les inclusions pour la bibliothÃ¨que d'entrÃ©e sortie standard et la lib standard.
 
 ```C
 #include <stdio.h>
 #include <stdlib.h>
 ```
-
