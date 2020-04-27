@@ -3,7 +3,7 @@
 ## La boucle while
 
 ```C
-while (conditon)
+while (condition)
 {
 	// Instruction
 }
