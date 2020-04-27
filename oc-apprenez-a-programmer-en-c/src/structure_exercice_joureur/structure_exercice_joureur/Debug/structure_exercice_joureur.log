@@ -1,4 +1,0 @@
-﻿  structure_exercice_joureur.c
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\structure_exercice_joureur\structure_exercice_joureur\structure_exercice_joureur.c(25): error C2198: 'fgets' : pas assez d'arguments pour un appel
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\structure_exercice_joureur\structure_exercice_joureur\structure_exercice_joureur.c(38): warning C4477: 'scanf_s' : la chaîne de format '%d' nécessite un argument de type 'int *', mais l'argument variadique 1 est de type 'short *'
-  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\structure_exercice_joureur\structure_exercice_joureur\structure_exercice_joureur.c(38): note: utilisez '%hd' dans la chaîne de format

@@ -1,7 +1,0 @@
-﻿  TP-plus-ou-moins-v2.c
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-plus-ou-moins\tp-plus-ou-moins\tp-plus-ou-moins-v2.c(60): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-plus-ou-moins\tp-plus-ou-moins\tp-plus-ou-moins-v2.c(87): warning C4473: 'scanf_s' : nombre insuffisant d'arguments passés pour la chaîne de format
-  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-plus-ou-moins\tp-plus-ou-moins\tp-plus-ou-moins-v2.c(87): note: les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
-  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-plus-ou-moins\tp-plus-ou-moins\tp-plus-ou-moins-v2.c(87): note: l'argument variadique manquant 2 est demandé par la chaîne de format '%c'
-  c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-plus-ou-moins\tp-plus-ou-moins\tp-plus-ou-moins-v2.c(87): note: cet argument est utilisé comme taille de mémoire tampon
-  TP-plus-ou-moins.vcxproj -> C:\Users\xavie\source\repos\didierbroska\Openclassrooms\OC-Apprenez-a-programmer-en-C\src\TP-plus-ou-moins\Debug\TP-plus-ou-moins.exe

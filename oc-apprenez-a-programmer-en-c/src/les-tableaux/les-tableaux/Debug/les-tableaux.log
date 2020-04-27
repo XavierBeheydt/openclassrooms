@@ -1,6 +1,0 @@
-﻿  les-tableaux.c
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\les-tableaux\les-tableaux\les-tableaux.c(65): warning C4018: '<' : incompatibilité signed/unsigned
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\les-tableaux\les-tableaux\les-tableaux.c(82): warning C4018: '<' : incompatibilité signed/unsigned
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\les-tableaux\les-tableaux\les-tableaux.c(91): warning C4018: '<' : incompatibilité signed/unsigned
-c:\users\xavie\source\repos\didierbroska\openclassrooms\oc-apprenez-a-programmer-en-c\src\les-tableaux\les-tableaux\les-tableaux.c(105): warning C4018: '<' : incompatibilité signed/unsigned
-  les-tableaux.vcxproj -> C:\Users\xavie\source\repos\didierbroska\Openclassrooms\OC-Apprenez-a-programmer-en-C\src\les-tableaux\Debug\les-tableaux.exe
