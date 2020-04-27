@@ -2,7 +2,8 @@
 
 ## Vocabulaire ;
 
-- compilateur : c'est l'outil logiciel qui permet de convertire le code source en langage de programmation en fichier binaire éxécutable et compréhensible par l'ordinateur.
-- le code source : c'est l'ensemble des fichiers reprenant le programme écris dans un langage intelligible.
-- lagage de haut niveau : plus proche du langage humain, plus rapide en développement mais moins efficient en terme de performance.
-- langage de bas niveau : c'est plutôt l'inverse.
+- compilateur : c'est l'outil logiciel qui permet de convertir le code source en langage de programmation en fichier binaire exÃ©cutable et comprÃ©hensible par l'ordinateur.
+- le code source : c'est l'ensemble des fichiers reprenant le programme Ã©cris dans un langage intelligible.
+- langage de haut niveau : plus proche du langage humain, plus rapide en dÃ©veloppement mais moins efficient en terme de performance.
+- langage de bas niveau : c'est plutÃ´t l'inverse.
+  
