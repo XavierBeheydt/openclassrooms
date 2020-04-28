@@ -1,44 +1,44 @@
-# Le preprocesseur
+# Le prÃ©processeur
 
-Les directives de préprocesseur sont des instructions s'exécutant juste avant la compilation du programme.
-Cela permet de faire des inclusions d'autres fichiers, ou bien des macros et des définitions.
-Ces directives sont toujours précédées par le signe `#`.
+Les directives de prÃ©processeur sont des instructions s'exÃ©cutant juste avant la compilation du programme.
+
+Cela permet de faire des inclusions d'autres fichiers, ou bien des macros et des dÃ©finitions.
+
+Ces directives sont toujours prÃ©cÃ©dÃ©es par le signe `#`.
 
 ## Les include
 
-La directive include permet d'inclure un ou plusieurs fichiers au sein du fichier courant. Dans le cas d'inclusion
-de fichiers au sein du dossier courant ou d'inclure des fichiers bibliothèques, il faut faire comme cela :
+La directive include permet d'inclure un ou plusieurs fichiers au sein du fichier courant. Dans le cas d'inclusion de fichiers au sein du dossier courant ou d'inclure des fichiers bibliothÃ¨ques, il faut faire comme cela :
 
 ```C
-#include <stdio.h> // Utilisation des chevrons pour l'inclusions d'une bibliothèque
-#include "my_header.h" // Utilisation des double quotes pour des fichiers du répertoire courant
+#include <stdio.h> // Utilisation des chevrons pour l'inclusions d'une bibliothÃ¨que
+#include "my_header.h" // Utilisation des double quotes pour des fichiers du rÃ©pertoire courant
 ```
 
-La directive #include permet en faite au moment de la compilation d'assemblé les fichiers comme si il y en avait qu'un.
+La directive #include permet en faite au moment de la compilation d'assemblÃ© les fichiers comme si il y en avait qu'un.
 
 *Pour rappel les fichier `.h` permet l'inscription des prototypes des fonctions.*
 
 ## Les define
 
-Ce mot clef là permet de définir des constante de préprocesseur. Cela a pour incidence de remplacer le nom de la constante
-définit par la valeur saisi.
-Cela permet d'eviter l'allocation mémoire pour une valeur constante et par la même occasion de simplifier la réédition
-de la dite valeur en ayant pas à parcourir tout le code pour changer cette dite valeur.
+Ce mot clef lui permet de dÃ©finir des constante de prÃ©processeur. Cela a pour incidence de remplacer le nom de la constante dÃ©finit par la valeur saisi.
+
+Cela permet d'Ã©viter l'allocation mÃ©moire pour une valeur constante et par la mÃªme occasion de simplifier la rÃ©Ã©dition de la dite valeur en ayant pas Ã  parcourir tout le code pour changer cette dite valeur.
 
 Exemple :
 
 ```C
 #define WIDTH 1920
 #define HEIGHT 1080
-// Définition d'une taille de fenêtre par exemple
+// DÃ©finition d'une taille de fenÃªtre par exemple
 ```
 
-Losque l'on parle de non utilisation de case mémoire, cela est vraie uniquement pour la pile et le tas (allocation dynamique).
-Mais cette constante de préprocesseur , elle entre bien en mémoire statique au chargement du programme (plus précisement dans le *segùent text*.
+Lorsque l'on parle de non utilisation de case mÃ©moire, cela est vraie uniquement pour la pile et le tas (allocation dynamique).
+Mais cette constante de prÃ©processeur , elle entre bien en mÃ©moire statique au chargement du programme (plus prÃ©cisÃ©ment dans le *segment text*.)
 
-Voir [l'allocation de mémoire](https://fr.wikipedia.org/wiki/Allocation_de_mémoire)
+Voir [l'allocation de mÃ©moire](https://fr.wikipedia.org/wiki/Allocation_de_mÃ©moire)
 
-*Avant la norme C11, l'allocation dynamique de taille de tableau n'est pas autorisée mais elle peut être préprocessé.*
+*Avant la norme C11, l'allocation dynamique de taille de tableau n'est pas autorisÃ©e mais elle peut Ãªtre prÃ©processÃ©e.*
 
 ```C
 #define TAILLE_TABLEAU
@@ -50,10 +50,9 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Les caculs avec `#define`
+### Les calculs avec `#define`
 
-Nous pouvons donc créer une directive de calcul lors de la compilation et faire un binding sur cette valeur, toujours dans le cas 
-de simplifier l'écriture et la maintenance de notre code. Exemple :
+Nous pouvons donc crÃ©er une directive de calcul lors de la compilation et faire un binding sur cette valeur, toujours dans le cas de simplifier l'Ã©criture et la maintenance de notre code. Exemple :
 
 ```C
 #define WIDTH 800
@@ -61,36 +60,37 @@ de simplifier l'écriture et la maintenance de notre code. Exemple :
 #define NB_PIXELS (WIDTH * HEIGHT)
 ```
 
-**Nous mettons donc le calcul entre parenthèse afin de bien définir le calcul de l'attribution à la constante de préprocesseur.**
-L'ensemble des opérateurs de base du langage peuvent être utilisé.
+**Nous mettons donc le calcul entre parenthÃ¨se afin de bien dÃ©finir le calcul de l'attribution Ã  la constante de prÃ©processeur.**
+L'ensemble des opÃ©rateurs de base du langage peuvent Ãªtre utilisÃ©.
 
-### Les constantes pré-existantes
+### Les constantes prÃ©-existantes
 
-Il existe quelques constantes de préprocesseur prédéfinies par le langage, tel que:
+Il existe quelques constantes de prÃ©processeur prÃ©dÃ©finies par le langage, tel que:
 
-- `__LINE__` : Affichera la ligne de programme en cour d'exécution.
-- `__FILE__` : donne le fichier en cour d'exécution.
+- `__LINE__` : Affichera la ligne de programme en cour d'exÃ©cution.
+- `__FILE__` : donne le fichier en cour d'exÃ©cution.
 - `__DATE__` : donne la date de compilation.
 - `__TIME__` : donne l'heure de la compilation.
 
-L'intérêt de cela est dans le car de débuggage.
+L'intÃ©rÃªt de cela est dans le car de dÃ©bogage.
 
 ### Les macros
 
-Cette directive permet de générer des morceaux de code réutilisable et surtout si celui-ci est très récurent.
-La macro peut avoir ou pas des arguments, être sur plusieurs lignes.
-Lors de sont utilisation celle-ci ne demande pas de `;` à la fin (bien qu'elle fonctionne aussi avec).
+Cette directive permet de gÃ©nÃ©rer des morceaux de code rÃ©utilisable et surtout si celui-ci est trÃ¨s rÃ©curent.
+
+La macro peut avoir ou pas des arguments, Ãªtre sur plusieurs lignes.
+Lors de sont utilisation celle-ci ne demande pas de `;` Ã  la fin (bien qu'elle fonctionne aussi avec).
 
 *Voir le code d'exemple dans preprocessor.c*
 
-### Les définitions simples et condition sur définition
+### Les dÃ©finitions simples et condition sur dÃ©finition
 
-Les définitions simples permettent de créer des points de validation pour les conditions sur définition.
+Les dÃ©finitions simples permettent de crÃ©er des points de validation pour les conditions sur dÃ©finition.
 
-Les conditions sur définition sont composées des mots clefs :
+Les conditions sur dÃ©finition sont composÃ©es des mots clefs :
 
-- `#ifdef` : si définis
-- `#ifndef` : si non définis
+- `#ifdef` : si dÃ©finis
+- `#ifndef` : si non dÃ©finis
 - `#endif` : fin des conditions
 
 Exemple :
@@ -99,21 +99,21 @@ Exemple :
 #define LINUX
 
 #ifdef LINUX
-	// code à exécuter à la compilation
+	// code Ã  exÃ©cuter Ã  la compilation
 #endif
 
 #ifdef WINDOWS
-	// code à exécuter à la compilation
+	// code Ã  exÃ©cuter Ã  la compilation
 #endif
 
 #ifdef MACOS
-	// code à exécuter à la compilation
+	// code Ã  exÃ©cuter Ã  la compilation
 #endif
 ```
 
-L'exemple précédent permet de mettre en place une compilation conditionnelle selon l'OS utilisé.
+L'exemple prÃ©cÃ©dent permet de mettre en place une compilation conditionnelle selon l'OS utilisÃ©.
 
-Pour le `#ifndef` cela peut servir à éviter les inclusions infinies.
+Pour le `#ifndef` cela peut servir Ã  Ã©viter les inclusions infinies.
 
 Exemple :
 
@@ -121,11 +121,11 @@ Exemple :
 #ifndef DEF_FICHIER_A_INCLURE
 #define DEF_FICHIER_A_INCLURE
 
-// Plus la définition des autres inclusions
+// Plus la dÃ©finition des autres inclusions
 #endif
 ```
 
-Cela permet donc d'éviter les inclusions infinies dansle cas de projets multifichiers.
+Cela permet donc d'Ã©viter les inclusions infinies dans le cas de projets multi-fichiers.
 
 ### Les conditions
 
