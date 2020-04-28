@@ -1,12 +1,12 @@
-# Les chaînes de caractères
+# Les chaÃ®nes de caractÃ¨res
 
 ## Le type char
 
-En C pour le stockage de caractère, nous préconisons l'utilisation de variables de type `char`.
-Celui-ci permet de stocker des variable de -128 à +127. Ce qui correspond pour sa partie positive
-à la table ASCII.
+En C pour le stockage de caractÃ¨re, nous prÃ©conisons l'utilisation de variables de type `char`.
 
-**Ecrire un char**
+Celui-ci permet de stocker des variable de -128 Ã  +127. Ce qui correspond pour sa partie positive Ã  la table ASCII.
+
+**Ã‰crire un char**
 
 ```C
 char lettre = 'A';
@@ -26,26 +26,27 @@ scanf("%c", lettre);
 
 ## Un tableau de char
 
-En C afin de mettre en variable du texte, celui-ci est enregistré dans un tableau de `char`.
-La particularité vient aussi du fait qu'il faut notifier la fin de la chaîne de caractère.
-Cela se mette en place par un *null byte* ou *un caractère de fin de chaîne* le `\0`.
+En C afin de mettre en variable du texte, celui-ci est enregistrÃ© dans un tableau de `char`.
+
+La particularitÃ© vient aussi du fait qu'il faut notifier la fin de la chaÃ®ne de caractÃ¨re.
+
+Cela se mette en place par un *null byte* ou *un caractÃ¨re de fin de chaÃ®ne* le `\0`.
 
 Exemple :
 
 ```C
 
-char* texte = "salut"; // Je préfèrerais cette écriture afin de bien séparé les type de variable
+char* texte = "salut"; // Je prÃ©fÃ©rerais cette Ã©criture afin de bien sÃ©parÃ© les type de variable
 
 // ou 
 
 char texte[] = "salut";
 
 /*
-De cette manière la dimension du tableau est automatiquement calculée, de même que le 
-null byte est intégré de manière automatique.
+De cette maniÃ¨re la dimension du tableau est automatiquement calculÃ©e, de mÃªme que le null byte est intÃ©grÃ© de maniÃ¨re automatique.
 */
 ```
 
 ## La manipulation de string
 
-En C une bibliothèque existe et est spécialement dédiée à cela, la `string.h`. Voir l'API.
+En C une bibliothÃ¨que existe et est spÃ©cialement dÃ©diÃ©e Ã  cela, la `string.h`. Voir l'API.
