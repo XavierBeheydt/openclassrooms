@@ -1,17 +1,15 @@
 # Les pointeurs
 
-Dans le cas ou nous voudrions manipuler plusieurs variables au sein d'une fonction la solution
-est l'utilisation de pointeurs car nous savons que la mise en place de variables globales est
-peu préconisées.
+Dans le cas ou nous voudrions manipuler plusieurs variables au sein d'une fonction la solution est l'utilisation de pointeurs car nous savons que la mise en place de variables globales est peu prÃ©conisÃ©es.
 
 Explication de la syntaxe :
 
 - `var` est le retour de la valeur contenue dans `var`,
-- `&var`est le retour de l'adresse mémoire de la variable,
-- `*pointer`est une variable de type pointeur et contiendra l'adresse d'une autre variable mais qui affichera la valeur de la variable pointée,
-- `pointer` affichera la valeur du pointeur soit l'adresse de la variable pointée.
+- `&var`est le retour de l'adresse mÃ©moire de la variable,
+- `*pointer`est une variable de type pointeur et contiendra l'adresse d'une autre variable mais qui affichera la valeur de la variable pointÃ©e,
+- `pointer` affichera la valeur du pointeur soit l'adresse de la variable pointÃ©e.
 
-Exemple de déclaration :
+Exemple de dÃ©claration :
 
 ```C
 int age = 10;
@@ -21,8 +19,8 @@ int *pointeurSurAge = &age;
 int *pointeurSurAge;
 pointeurSurAge = &age;
 
-// Nous remarquons que le pointeur est typé de la même manière que la variable pointée
-// Dans le cas où la variable était de type double, notre pointeur aurait été aussi de type double
+// Nous remarquons que le pointeur est typÃ© de la mÃªme maniÃ¨re que la variable pointÃ©e
+// Dans le cas oÃ¹ la variable Ã©tait de type double, notre pointeur aurait Ã©tÃ© aussi de type double
 ```
 
 Exemple de passage de pointeur sur une fonction :
@@ -40,8 +38,22 @@ int main()
 	return 0;
 }
 
-void triplePointeur(int *pointeurSurNobmre)
+void triplePointeur(int *pointeurSurNombre)
 {
-	// Ici nous travaillons sur la valeur de la variable pointée, donc *pointeurSurNombre.
-	*poointeurSurNombre *= 3; // Et on multiplie par 3 la valeur pointée.
+	// Ici nous travaillons sur la valeur de la variable pointÃ©e, donc *pointeurSurNombre.
+	*pointeurSurNombre *= 3; // Et on multiplie par 3 la valeur pointÃ©e.
 }
+```
+
+## Bonnes pratiques
+
+Dans certains cas, il est prÃ©fÃ©rable de faire une init de pointeur Ã  `NULL`.
+
+```c
+// DÃ©claration et init Ã  null
+int *pointeur = NULL;
+
+// puis affectation d'une adresse
+int age = 33;
+int *pointeur = &age;
+```
