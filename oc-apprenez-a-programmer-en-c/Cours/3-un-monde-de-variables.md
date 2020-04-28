@@ -47,7 +47,7 @@
 |           "            |    "    |             "              |              "              |            %Le or %LE             |
 |           "            |    "    |             "              |              "              |            %La or %LA             |
 
-## Les variables
+### La déclaration
 
 Exemple de déclaration de variable :
 
@@ -62,7 +62,7 @@ unsigned int somme_argent = 150;
 
 *On préférera effectuer les déclarations en début de fonction.*
 
-## Les constantes
+### Les constantes
 
 Exemple de déclaration de constante :
 
@@ -74,3 +74,50 @@ const float TAUX = 15.5;
 **Pour les noms de constante, la règle veut un nom en majuscule et des séparation de mot avec un *underscore*.**
 
 *Ici, nous ne pouvons pas effectuer d'affectation séparée, car le principe d'une constante est de ne pas pouvoir être modifiée au cours du programme.*
+
+## La porté des variables
+
+Selon le context ou la manière de préfixer une variable sa porté peut être déterminée.
+
+### La porté globale
+
+Lorsqu'une variable est déclarée en dehors d'une fonction celle-ci est de portée globale et sera accessible partout.
+
+**Il est fortement déconseillé de faire cela!**
+
+*Exemple :*
+
+```c
+int maVarGlobale = 5;
+
+in main()
+{
+    // Il est possible de la modifier partout
+    maVarGlobale++;
+}
+```
+
+### La porté dans une fonction
+
+Une variable déclaré dans une fonction a une durée de vie limité. C'est à dire que celle-ci n'existe que lorsque la fonction est appelée. Elle sera détruite après l'exécution de celle-ci.
+
+La variable n'est accessible nulle part d'autre qu'à l'intérieur de la fonction.
+
+### La porté statique
+
+Nous voulons dans certains cas particulier disposer d'un variables semi-globale. Avec l'ajout en préfixe du mot clé `static` une variable dispose d'une porté limité au fichier concerné.
+
+```c
+static float maVarStatic = 7.8;
+```
+
+### La fonction statique
+
+De la même manière qu'une variable une fonction peut être aussi `static`.
+
+```c
+static void hello(string[] name)
+{
+    printf("%s", string);
+}
+```
