@@ -6,9 +6,9 @@ En C pour le stockage de caractère, nous préconisons l'utilisation de variable
 
 Celui-ci permet de stocker des variable de -128 à +127. Ce qui correspond pour sa partie positive à la table ASCII.
 
-**Écrire un char**
+**Afficher un char**
 
-```C
+```c
 char lettre = 'A';
 // Pour convertir une lettre en valeur de char, il faut utiliser le simple quote.
 
@@ -17,11 +17,19 @@ printf("%c\n", lettre);
 
 **Saisir un char**
 
-```C
+```c
 
 char lettre;
 
-scanf("%c", lettre);
+scanf("%c", &lettre);
+```
+
+**Saisir une chaîne de caractères**
+
+```c
+char prenom[100];
+
+scanf("%s", prenom);
 ```
 
 ## Un tableau de char
@@ -34,7 +42,7 @@ Cela se mette en place par un *null byte* ou *un caractère de fin de chaîne* l
 
 Exemple :
 
-```C
+```c
 
 char* texte = "salut"; // Je préférerais cette écriture afin de bien séparé les type de variable
 
