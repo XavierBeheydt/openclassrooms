@@ -10,7 +10,7 @@ Ces directives sont toujours précédées par le signe `#`.
 
 La directive include permet d'inclure un ou plusieurs fichiers au sein du fichier courant. Dans le cas d'inclusion de fichiers au sein du dossier courant ou d'inclure des fichiers bibliothèques, il faut faire comme cela :
 
-```C
+```c
 #include <stdio.h> // Utilisation des chevrons pour l'inclusions d'une bibliothèque
 #include "my_header.h" // Utilisation des double quotes pour des fichiers du répertoire courant
 ```
@@ -27,7 +27,7 @@ Cela permet d'éviter l'allocation mémoire pour une valeur constante et par la 
 
 Exemple :
 
-```C
+```c
 #define WIDTH 1920
 #define HEIGHT 1080
 // Définition d'une taille de fenêtre par exemple
@@ -40,7 +40,7 @@ Voir [l'allocation de mémoire](https://fr.wikipedia.org/wiki/Allocation_de_mém
 
 *Avant la norme C11, l'allocation dynamique de taille de tableau n'est pas autorisée mais elle peut être préprocessée.*
 
-```C
+```c
 #define TAILLE_TABLEAU
 
 int main(int argc, char *argv[])
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
 Nous pouvons donc créer une directive de calcul lors de la compilation et faire un binding sur cette valeur, toujours dans le cas de simplifier l'écriture et la maintenance de notre code. Exemple :
 
-```C
+```c
 #define WIDTH 800
 #define HEIGHT 600
 #define NB_PIXELS (WIDTH * HEIGHT)
@@ -81,7 +81,33 @@ Cette directive permet de générer des morceaux de code réutilisable et surtou
 La macro peut avoir ou pas des arguments, être sur plusieurs lignes.
 Lors de sont utilisation celle-ci ne demande pas de `;` à la fin (bien qu'elle fonctionne aussi avec).
 
-*Voir le code d'exemple dans preprocessor.c*
+*Exemple de macro simple*
+
+```c
+#define HELLO() printf("Hello World  !\n");
+```
+
+*Exemple de macro multiligne*
+
+```c
+#define RACONTE_TA_VIE() printf("Bonjour\n"); \
+						 printf("Je m'appelle\n"); \
+						 printf("John Doe\n");
+```
+
+*Exemple de macro avec condition*
+
+```c
+#define MAJEUR(age, nom) if (age >= 18) \
+                    printf("Vous etes majeur %s\n", nom);
+
+int main(int argc, char *argv[])
+{
+    MAJEUR(22)
+
+    return 0;
+}
+```
 
 ### Les définitions simples et condition sur définition
 
@@ -95,7 +121,7 @@ Les conditions sur définition sont composées des mots clefs :
 
 Exemple :
 
-```C
+```c
 #define LINUX
 
 #ifdef LINUX
@@ -117,7 +143,7 @@ Pour le `#ifndef` cela peut servir à éviter les inclusions infinies.
 
 Exemple :
 
-```C
+```c
 #ifndef DEF_FICHIER_A_INCLURE
 #define DEF_FICHIER_A_INCLURE
 
