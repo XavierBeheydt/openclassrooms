@@ -1,0 +1,2 @@
+C:\Users\xavie\source\computer-learning\computer-learning-site\cursus\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-pendu-vs\x64\Debug\tp-pendu-vs.exe
+C:\Users\xavie\source\computer-learning\computer-learning-site\cursus\openclassrooms\oc-apprenez-a-programmer-en-c\src\tp-pendu-vs\x64\Debug\tp-pendu-vs.pdb

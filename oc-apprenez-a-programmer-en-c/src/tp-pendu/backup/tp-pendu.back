@@ -1,0 +1,104 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+#define NB_COUPS 10
+#define CHAR_SECRET '*'
+
+typedef struct MotSecret MotSecret;
+struct MotSecret
+{
+    char *clair;
+    char *cache;
+    int taille;
+};
+
+char lireChar()
+{
+    char caractere = 0;
+
+    caractere = getchar();          // On lit le premier caractère
+    caractere = toupper(caractere); // On met la lettre en majuscule si elle ne l'est pas déjà
+
+    // On lit les autres caractères mémorisés un à un jusqu'au \n (pour les effacer)
+    while (getchar() != '\n');
+
+    return caractere; // On retourne le premier caractère qu'on a lu
+}
+
+int getTailleDict(FILE *dictionnaire)
+{
+    int nbMotDict = 0;
+    int character = 0;
+
+    // comptage du nombre de ligne donc de mot
+    do
+    {
+        character = fgetc(dictionnaire);
+        if (character == '\n' || character == EOF)
+            nbMotDict++;
+    } while (character != EOF);
+
+    // Replacement du curseur en début de fichier.
+    // rewind(dictionnaire);
+
+    return nbMotDict;
+}
+
+
+
+void getMotDict(MotSecret *motSecret, FILE *dictionnaire, int motSelectionne)
+{
+    int i = 0;
+    do
+    {
+        printf("cur = %d\n", ftell(dictionnaire));
+    exit(EXIT_SUCCESS);
+}
+
+void recupMotSecretDict(MotSecret *motSecret)
+{
+    // Init d'un pointeur faire notre fichier dictionnaire.
+    FILE *dictionnaire = NULL;
+    dictionnaire = fopen("dictionnaire.txt", "r");
+    int motSelectionne = 0;
+
+    if (dictionnaire != NULL)
+    {
+        // Selection du mot secret
+        motSelectionne = (rand() % (getTailleDict(dictionnaire) - 1 + 1)) + 1;
+        getMotDict(&motSecret, dictionnaire, motSelectionne);
+    }
+    else
+    {
+        printf("Erreur dans la lecture du fichier dictionnaire !\n");
+        exit(EXIT_FAILURE);
+    }
+    fclose(dictionnaire);
+}
+
+int main(int argc, char const *argv[])
+{
+    // Init de notre randomizer pour la récupe du mot secret dans une dict
+    srand(time(NULL));
+    // Init des vars
+    int coupJoue = 0;
+    // Init du type mot secret
+    MotSecret motSecret = {NULL, NULL, 0};
+    // Recupération du mot secret
+    recupMotSecretDict(&motSecret);
+
+    // Message de bienvenue
+    printf("Bienvenu dans le Pendu !\n");
+
+    // Boucle de jeu
+    do
+    {
+        // Affichage du nombre de de coup restant
+        printf("Il vous reste %d coups à jouer.\n", NB_COUPS - coupJoue);
+    } while (coupJoue < NB_COUPS);
+
+    return 0;
+}
