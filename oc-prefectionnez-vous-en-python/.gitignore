@@ -1,0 +1,5 @@
+.python-version
+*.pyc
+*.swp
+.vscode/
+.code-workspace.code-workspace
